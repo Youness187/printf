@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * div - division calculation.
- * @div: the dividor.
+ * _div - division calculation.
+ * @d: the dividor.
  * @num: the devided number.
  * Return: the division result.
  *
@@ -46,5 +46,28 @@ int p_numbers(va_list op)
 		divider /= 10;
 	}
 
+	return (len);
+}
+/**
+ * p_u_numbers - prints a number.
+ * @op: list o f arguments.
+ * Return: the length of the numbers.
+ */
+
+int p_u_numbers(va_list op)
+{
+	int divider = 1, len = 0;
+	unsigned int number;
+
+	number = va_arg(op, unsigned int);
+
+	divider = _div(divider, number);
+
+	for (; divider != 0; len++)
+	{
+		_putchar('0' + (number / divider));
+		number %= divider;
+		divider /= 10;
+	}
 	return (len);
 }
