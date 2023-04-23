@@ -27,10 +27,11 @@ int p_string(va_list c)
 }
 /**
  * p_percent - print a percent sign (\% also works)
+ * @c: va_list
  * Return: 1
 */
 
-int p_percent(void)
+int p_percent(__attribute__((unused))va_list c)
 {
 	_putchar('%');
 	return (1);

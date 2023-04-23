@@ -12,7 +12,7 @@
 struct convert
 {
 	char *type;
-	int (*f)();
+	int (*f)(va_list);
 };
 typedef struct convert check;
 
@@ -23,8 +23,8 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 
 /* Print Functions */
-int p_percent(void);
-int p_string(va_list c);
-int p_char(va_list c);
+int p_percent(va_list);
+int p_string(va_list);
+int p_char(va_list);
 
 #endif
