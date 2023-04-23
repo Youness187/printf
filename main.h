@@ -5,11 +5,13 @@
 #include <stdarg.h>
 #include <unistd.h>
 /**
-* struct check - defines a structure for symbols and functions
-*
-* @type: The operator
-* @f: The function associated
-*/
+ * struct check - Defines a structure for symbols and functions.
+ * @type: The operator.
+ * @f: The function associated.
+ * p_percent - print persentage character
+ * p_string - print string
+ * p_char - print character
+ */
 
 typedef struct
 {

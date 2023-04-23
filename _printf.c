@@ -9,6 +9,7 @@ int _printf(const char *format, ...)
 {
 	int i, l;
 	va_list op;
+
 	va_start(op, format);
 
 	for (i = 0; format[i] != '\0'; i++)
