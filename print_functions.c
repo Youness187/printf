@@ -21,6 +21,9 @@ int p_string(va_list c)
 	int i;
 	char *s = va_arg(c, char*);
 
+	if (s == NULL)
+		s = "(null)";
+
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 	return (i);
