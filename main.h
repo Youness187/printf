@@ -17,14 +17,14 @@ typedef struct
 	void (*f)();
 } check;
 
+int checker(va_list op, char form);
 int _putchar(char c); /* writes the character c to stdout */
 
 int _printf(const char *format, ...); /* printf */
 
 /* Print Functions */
-void p_percent(); /* for %% */
-void p_string(va_list c); /* for %s */
-void p_char(va_list c); /* for %c */
-void checker(va_list op, char form);
+int p_percent(void); /* for %% */
+int p_string(va_list c); /* for %s */
+int p_char(va_list c); /* for %c */
 
 #endif
