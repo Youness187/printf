@@ -11,7 +11,8 @@ int checker(va_list op, char form)
 		{"c", p_char},
 		{"s", p_string},
 		{"%", p_percent},
-		{"d"}, p_numbers},
+		{"d", p_numbers},
+		{"i", p_numbers},
 		{NULL, NULL}
 	};
 	int i, l = 0;

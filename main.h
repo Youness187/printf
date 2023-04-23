@@ -26,5 +26,5 @@ int _printf(const char *format, ...);
 int p_percent(va_list);
 int p_string(va_list);
 int p_char(va_list);
-int p_numbrs(va_list op);
+int p_numbers(va_list op);
 #endif

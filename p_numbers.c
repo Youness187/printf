@@ -21,7 +21,7 @@ int div(int div, int num)
  * @op: list o f arguments.
  * Return: the length of the numbers.
  */
-int p_numbrs(va_list op)
+int p_numbers(va_list op)
 {
 	int number, divider = 1, len = 0;
 
