@@ -14,7 +14,7 @@
 typedef struct
 {
 	char *type;
-	void (*f)();
+	int (*f)();
 } check;
 
 int checker(va_list op, char form);
