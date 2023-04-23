@@ -18,6 +18,13 @@ struct convert
 };
 typedef struct convert check;
 
+/*help functions*/
+int p_hx(char *str, int len, unsigned int num, char x);
+int x_X(int num, char x);
+int p_o(char *str, int len, unsigned int num);
+int p_b(char *str, int len, unsigned int num);
+int print_boxX(va_list op, int base, char x);
+void _string(char *c);
 
 int checker(va_list op, char form);
 int _putchar(char c);
@@ -31,7 +38,9 @@ int p_char(va_list);
 int p_numbers(va_list op);
 int p_binary(va_list op);
 int p_u_numbers(va_list op);
-int print_octal(va_list op);
+int p_octal(va_list op);
+int p_hexadecimal(va_list op);
+int p_Hexadecimal(va_list op);
 
 unsigned int length_base(unsigned int n, int b);
 

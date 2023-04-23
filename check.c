@@ -15,7 +15,9 @@ int checker(va_list op, char form)
 		{"i", p_numbers},
 		{"b", p_binary},
 		{"u", p_u_numbers},
-		{"o", print_octal},
+		{"o", p_octal},
+		{"X", p_Hexadecimal},
+		{"x", p_hexadecimal},
 		{NULL, NULL}
 	};
 	int i, l = 0;

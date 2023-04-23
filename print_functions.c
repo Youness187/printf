@@ -39,3 +39,22 @@ int p_percent(__attribute__((unused))va_list c)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * p_binary - prints binary
+ * @op: va_list
+ * Return: The length of the number printed
+*/
+int p_binary(va_list op)
+{
+	return (print_boxX(op, 2, '\0'));
+}
+/**
+ * p_octal - print value in octal format
+ * @op: va_list
+ * Return: The length of the number printed
+*/
+int p_octal(va_list op)
+{
+	return (print_boxX(op, 8, '\0'));
+}
