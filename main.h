@@ -5,28 +5,27 @@
 #include <stdarg.h>
 #include <unistd.h>
 /**
- * struct check - Defines a structure for symbols and functions.
- * @type: The operator.
- * @f: The function associated.
- * p_percent - print persentage character
- * p_string - print string
- * p_char - print character
+ * struct convert - defines a structure for symbols and functions
+ *
+ * @sym: The operator
+ * @f: The function associated
  */
-
-typedef struct
+struct convert
 {
-	char *type;
-	int (*f)();
-} check;
+	char *sym;
+	int (*f)(va_list);
+};
+typedef struct convert check;
+
 
 int checker(va_list op, char form);
-int _putchar(char c); /* writes the character c to stdout */
+int _putchar(char c);
 
-int _printf(const char *format, ...); /* printf */
+int _printf(const char *format, ...);
 
 /* Print Functions */
-int p_percent(void); /* for %% */
-int p_string(va_list c); /* for %s */
-int p_char(va_list c); /* for %c */
+int p_percent(void);
+int p_string(va_list c);
+int p_char(va_list c);
 
 #endif
