@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct convert - defines a structure for symbols and functions
  *
@@ -30,6 +31,7 @@ int p_char(va_list);
 int p_numbers(va_list op);
 int p_binary(va_list op);
 int p_u_numbers(va_list op);
+int print_octal(va_list op);
 
 unsigned int length_base(unsigned int n, int b);
 
