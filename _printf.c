@@ -7,7 +7,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, l;
+	int i, l = 0;
 	va_list op;
 
 	va_start(op, format);
