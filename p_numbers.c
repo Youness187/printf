@@ -6,7 +6,7 @@
  * Return: the division result.
  *
  */
-int div(int div, int num)
+int div(int div, unsigned int num)
 {
 	int i;
 
