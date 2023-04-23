@@ -17,22 +17,25 @@ int div(int div, int num)
 	return (div);
 }
 /**
- * p_numbrs - prints a number.
+ * p_numbers - prints a number.
  * @op: list o f arguments.
  * Return: the length of the numbers.
  */
 int p_numbers(va_list op)
 {
-	int number, divider = 1, len = 0;
+	int n, divider = 1, len = 0;
+	unsigned int number;
 
-	number = va_arg(op, int);
+	n = va_arg(op, int);
 
-	if (number < 0)
+	if (n < 0)
 	{
 		len++;
 		_putchar('-');
-		number *= -1;
+		number = (n * -1);
 	}
+	else
+		number = n;
 
 	divider = div(divider, number);
 
