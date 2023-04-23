@@ -6,15 +6,15 @@
  * Return: the division result.
  *
  */
-int div(int div, unsigned int num)
+int _div(int d, unsigned int num)
 {
 	int i;
 
-	for (i = 0; (num / div) > 9 ; i++)
+	for (i = 0; (num / d) > 9 ; i++)
 	{
-		div *= 10;
+		d *= 10;
 	}
-	return (div);
+	return (d);
 }
 /**
  * p_numbers - prints a number.
@@ -37,7 +37,7 @@ int p_numbers(va_list op)
 	else
 		number = n;
 
-	divider = div(divider, number);
+	divider = _div(divider, number);
 
 	for (; divider != 0; len++)
 	{

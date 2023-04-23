@@ -13,6 +13,7 @@ int checker(va_list op, char form)
 		{"%", p_percent},
 		{"d", p_numbers},
 		{"i", p_numbers},
+		{"b", p_binary},
 		{NULL, NULL}
 	};
 	int i, l = 0;
