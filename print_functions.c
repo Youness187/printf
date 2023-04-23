@@ -27,6 +27,7 @@ int p_string(va_list c)
 }
 /**
  * p_percent - print a percent sign (\% also works)
+ * @c: va_list
  * Return: 1
 */
 
