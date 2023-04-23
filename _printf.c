@@ -7,10 +7,10 @@
 
 int _printf(const char *format, ...)
 {
-	int i, l = 0;
+	int i, o, l = 0;
 	va_list op;
 
-	if (format == NULL) 
+	if (format == NULL)
 		return (-1);
 
 	va_start(op, format);
@@ -19,7 +19,10 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			l += checker(op, format[++i]);
+			o = checker(op, format[++i]);
+			if (o == -1)
+				return (-1);
+			l += o;
 		}
 		else
 		{
@@ -30,4 +33,3 @@ int _printf(const char *format, ...)
 	va_end(op);
 	return (l);
 }
-
