@@ -3,6 +3,7 @@
  * checker - checkes the flag
  * @op: va_list
  * @form: char
+ * Return: length
  */
 int checker(va_list op, char form)
 {
