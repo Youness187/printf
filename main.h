@@ -25,5 +25,6 @@ int _printf(const char *format, ...); /* printf */
 void p_percent(); /* for %% */
 void p_string(va_list c); /* for %s */
 void p_char(va_list c); /* for %c */
+void checker(va_list op, char form);
 
 #endif
