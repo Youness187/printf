@@ -25,7 +25,7 @@ int checker(va_list op, char form)
 	int i, l = 0;
 	int bo = 1;
 
-	if (form == ' ' || form == '\0')
+	if (form == '\0')
 		return (-1);
 
 	for (i = 0; list[i].type != NULL; i++)
