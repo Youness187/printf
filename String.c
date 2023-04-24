@@ -34,7 +34,10 @@ int Str(va_list op)
 	char *s = va_arg(op, char*);
 
 	if (s == NULL)
+	{
 		s = "(null)";
+		return (6);
+	}
 
 	for (i = 0; s[i] != '\0'; i++, l++)
 	{
