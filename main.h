@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * struct convert - defines a structure for symbols and functions
  *
@@ -43,6 +44,7 @@ int p_octal(va_list op);
 int p_hexadecimal(va_list op);
 int p_Hexadecimal(va_list op);
 int Str(va_list op);
+int p_pointer(va_list op);
 
 unsigned int length_base(unsigned int n, int b);
 
