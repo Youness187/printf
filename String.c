@@ -13,7 +13,8 @@ int hexa_code(char chr, char *str, int l)
 
 	if (chr < 0)
 		chr *= -1;
-
+	if (l > 4)
+		l = 0;
 	str[l--] = map_to[chr % 16];
 	str[l--] = map_to[chr / 16];
 	str[l--] = 'x';
