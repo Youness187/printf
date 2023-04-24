@@ -4,9 +4,20 @@
  * @op: va_list
  * Return: length
 */
+int length_pointer(unsigned long int n)
+{
+	int i;
+
+	for (i = 0; n > 0; i++)
+	{
+		n /= 16;
+	}
+	return (i);
+}
+
 int p_pointer(va_list op)
 {
-	int len = 2, i = 11;
+	int len = 2, i;
 	char map[] = "0123456789abcdef";
 	char str[13];
 	void *add = va_arg(op, void *);
@@ -17,9 +28,9 @@ int p_pointer(va_list op)
 		_string("(nil)");
 		return (5);
 	}
-
-	str[12] = '\0';
 	num = (unsigned long int)add;
+    i = length_pointer(num);
+	str[i--] = '\0';
 
 	while (num > 0)
 	{
