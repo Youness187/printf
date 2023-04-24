@@ -70,6 +70,7 @@ int x_X(int num, char x)
  * @len: length
  * @num: number
  * @x: char
+ * @o: int
  * Return: Number of characters printed
  */
 int p_hx(char *str, int len, unsigned int num, char x, int o)
