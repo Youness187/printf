@@ -58,6 +58,8 @@ int rot13(va_list op)
 				break;
 			}
 		}
+		if (j == 53)
+			_putchar(str[i]);
 	}
 	return (i);
 }
