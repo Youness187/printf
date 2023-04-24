@@ -29,7 +29,7 @@ int hexa_code(char chr, char *str, int l)
  */
 int Str(va_list op)
 {
-	int i, l, len;
+	int i, l = 0, len;
 	char *str;
 	char *s = va_arg(op, char*);
 
