@@ -25,7 +25,7 @@ int Str(va_list op)
 				return (-1);
 			if (len == 1)
 				_putchar('0');
-			p_hx(str, len, (unsigned int)s[i], 'X');
+			p_hx(str, len, (unsigned int)s[i], 'X', -1);
 			l += 3;
 		}
 		else

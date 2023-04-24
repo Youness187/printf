@@ -72,7 +72,7 @@ int x_X(int num, char x)
  * @x: char
  * Return: Number of characters printed
  */
-int p_hx(char *str, int len, unsigned int num, char x)
+int p_hx(char *str, int len, unsigned int num, char x, int o)
 {
 	int i, n;
 
@@ -89,6 +89,8 @@ int p_hx(char *str, int len, unsigned int num, char x)
 			str[len - i] = n + 48;
 		num = num / 16;
 	}
+	if (o == -1)
+		str[2] = '\0';
 	_string(str);
 	free(str);
 	return (len);

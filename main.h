@@ -19,7 +19,7 @@ struct convert
 typedef struct convert check;
 
 /*help functions*/
-int p_hx(char *str, int len, unsigned int num, char x);
+int p_hx(char *str, int len, unsigned int num, char x, int o);
 int x_X(int num, char x);
 int p_o(char *str, int len, unsigned int num);
 int p_b(char *str, int len, unsigned int num);

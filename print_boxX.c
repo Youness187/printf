@@ -66,7 +66,7 @@ int print_boxX(va_list op, int base, char x)
 	case 8:
 		return (p_o(str, len, num));
 	case 16:
-		return (p_hx(str, len, num, x));
+		return (p_hx(str, len, num, x, 1));
 	default:
 		return (-1);
 	}
