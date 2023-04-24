@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * p_pointer - print pointer
- * @op: va_list
- * Return: length
-*/
+ * length_pointer - calc length of a Number base of b
+ * @n: Number
+ * Return: length pointer
+ */
 int length_pointer(unsigned long int n)
 {
 	int i;
@@ -14,7 +14,11 @@ int length_pointer(unsigned long int n)
 	}
 	return (i);
 }
-
+/**
+ * p_pointer - print pointer
+ * @op: va_list
+ * Return: length
+*/
 int p_pointer(va_list op)
 {
 	int len = 2, i;
@@ -29,7 +33,7 @@ int p_pointer(va_list op)
 		return (5);
 	}
 	num = (unsigned long int)add;
-    i = length_pointer(num);
+	i = length_pointer(num);
 	str[i--] = '\0';
 
 	while (num > 0)
