@@ -20,6 +20,7 @@ int checker(va_list op, char form)
 		{"x", p_hexadecimal},
 		{"S", Str},
 		{"p", p_pointer},
+		{"r", p_revers},
 		{NULL, NULL}
 	};
 	int i, l = 0;
