@@ -24,6 +24,7 @@ int x_X(int num, char x);
 int p_o(char *str, int len, unsigned int num);
 int p_b(char *str, int len, unsigned int num);
 int print_boxX(va_list op, int base, char x);
+unsigned int length_base(unsigned int n, int b);
 void _string(char *c);
 
 int checker(va_list op, char form);
@@ -41,6 +42,7 @@ int p_u_numbers(va_list op);
 int p_octal(va_list op);
 int p_hexadecimal(va_list op);
 int p_Hexadecimal(va_list op);
+int Str(va_list op);
 
 unsigned int length_base(unsigned int n, int b);
 
