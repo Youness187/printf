@@ -13,8 +13,7 @@ int hexa_code(char chr, char *str, int l)
 
 	if (chr < 0)
 		chr *= -1;
-	if (l > 4)
-		l = 0;
+
 	str[l--] = map_to[chr % 16];
 	str[l--] = map_to[chr / 16];
 	str[l--] = 'x';
@@ -48,11 +47,10 @@ int Str(va_list op)
 		}
 		else
 		{
-			len = length_base(s[i], 16);
 			str = malloc(sizeof(char) * len + 1);
 			if (str == NULL)
 				return (-1);
-			l += hexa_code(s[i], str, len + 2);
+			l += hexa_code(s[i], str, 4);
 			_string(str);
 			free(str);
 		}
