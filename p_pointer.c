@@ -13,7 +13,10 @@ int p_pointer(va_list op)
 	unsigned long int num;
 
 	if (add == NULL)
+	{
 		_string("(nil)");
+		return (5);
+	}
 
 	str[12] = '\0';
 	num = (unsigned long int)add;
