@@ -21,6 +21,7 @@ int checker(va_list op, char form)
 		{"S", Str},
 		{"p", p_pointer},
 		{"r", p_revers},
+		{"R", rot13},
 		{NULL, NULL}
 	};
 	int i, l = 0;

@@ -46,6 +46,7 @@ int p_Hexadecimal(va_list op);
 int Str(va_list op);
 int p_pointer(va_list op);
 int p_revers(va_list op);
+int rot13(va_list op);
 
 unsigned int length_base(unsigned int n, int b);
 
