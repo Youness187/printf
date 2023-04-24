@@ -15,7 +15,11 @@ int Str(va_list op)
 
 	for (i = 0; s[i] != '\0'; i++, l++)
 	{
-		if ((s[i] < 32 && s[i] > 0) || s[i] >= 127)
+		if (s[i] >= 32 && s[i] < 127)
+		{
+			_putchar(s[i]);
+		}
+		else
 		{
 			_putchar('\\');
 			_putchar('x');
@@ -28,8 +32,6 @@ int Str(va_list op)
 			p_hx(str, len, (unsigned int)s[i], 'X', -1);
 			l += 3;
 		}
-		else
-			_putchar(s[i]);
 	}
 	return (l);
 }
