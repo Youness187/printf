@@ -1,5 +1,28 @@
 #include "main.h"
 /**
+ * hexa_code - hexa_code
+ * @chr: char
+ * @str: string p
+ * @l: length
+ * Return: 3
+ */
+
+int hexa_code(char chr, char *str, int l)
+{
+	char map_to[] = "0123456789ABCDEF";
+
+	if (chr < 0)
+		chr *= -1;
+
+	str[l--] = map_to[chr % 16];
+	str[l--] = map_to[chr / 16];
+	str[l--] = 'x';
+	str[l] = '\\';
+
+	return (3);
+}
+
+/**
  * Str - prints the string.
  * @op: va_list
  * Return: length of a string
@@ -21,17 +44,16 @@ int Str(va_list op)
 		}
 		else
 		{
-			_putchar('\\');
-			_putchar('x');
 			len = length_base(s[i], 16);
 			str = malloc(sizeof(char) * len + 1);
 			if (str == NULL)
 				return (-1);
-			if (len == 1)
-				_putchar('0');
-			p_hx(str, len, (unsigned int)s[i], 'X', -1);
+			hexa_code(s[i], str, len + 2);
+			_string(str);
+			free(str);
 			l += 3;
 		}
 	}
 	return (l);
 }
+
