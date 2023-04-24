@@ -47,6 +47,7 @@ int Str(va_list op)
 		}
 		else
 		{
+			len = length_base(s[i], 16);
 			str = malloc(sizeof(char) * len + 1);
 			if (str == NULL)
 				return (-1);
