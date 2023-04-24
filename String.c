@@ -15,7 +15,7 @@ int Str(va_list op)
 
 	for (i = 0; s[i] != '\0'; i++, l++)
 	{
-		if (s[i] < 32 || s[i] >= 127)
+		if ((s[i] < 32 && s[i] > 0) || s[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
