@@ -51,7 +51,7 @@ int Str(va_list op)
 			str = malloc(sizeof(char) * len + 1);
 			if (str == NULL)
 				return (-1);
-			l += hexa_code(s[i], str, 4);
+			l += hexa_code(s[i], str, len + 2);
 			_string(str);
 			free(str);
 		}
